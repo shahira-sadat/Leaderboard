@@ -1,6 +1,6 @@
-# Microverse-to-do-list
+# Microverse Leaderboard
 [!screenshot]
-> Description
+> The leaderboard is a website that displays scores submitted by different players. It also allows you to submit your score. All data is preserved to the external Leaderboard API service.
 
 ## Live Demo
 

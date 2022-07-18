@@ -1,7 +1,7 @@
 {
-  "name": "webpack",
+  "name": "leaderboard",
   "version": "1.0.0",
-  "description": "Webpack config template",
+  "description": "leaderboard project",
   "private": true,
   "main": "webpack.config.js",
   "dependencies": {
