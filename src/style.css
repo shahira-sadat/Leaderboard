@@ -22,7 +22,6 @@ ul {
   list-style: none;
 }
 
-
 header {
   margin: auto;
   max-width: var(--max-width);
@@ -45,9 +44,18 @@ header {
   max-width: 300px;
 }
 
-p{
+button {
+  background: #fff;
+  padding: 5px;
+  border: 1px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+
+p {
   color: red;
-} 
+}
+
 .recent {
   display: flex;
   justify-content: space-between;

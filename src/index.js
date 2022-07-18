@@ -2,7 +2,6 @@ import './style.css';
 import data from './modules/data.js';
 import generateScores from './modules/score.js';
 
-
 // Generate scores
 generateScores(data);
 
@@ -18,4 +17,4 @@ container.onsubmit = (e) => {
   const score = inputScore.value;
   data.push({ name, score });
   generateScores(data);
-}; 
+};

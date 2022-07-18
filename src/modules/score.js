@@ -8,4 +8,4 @@ const generateScores = (data) => {
   });
 };
 
-export default generateScores; 
+export default generateScores;
