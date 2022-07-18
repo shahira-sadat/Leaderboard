@@ -1,10 +1,12 @@
-# Microverse-to-do-list
-[!screenshot]
-> Description
+# Leaderboard
+<img width="891" alt="Screen Shot 2022-07-19 at 2 36 16 AM" src="https://user-images.githubusercontent.com/53530780/179625229-fc96ec04-37c2-4421-9e11-041df1e1129a.png">
+
+> A single page web app that displays scores submitted by different players. <br>
+All data is preserved thanks to the external Leaderboard API service.
 
 ## Live Demo
 
-Can check the live demo [here](https://shahira-sadat.github.io/)
+Can check the live demo [here](https://shahira-sadat.github.io/Leaderboard/dist/index.html)
 
 ## Built With
 - HTML5
