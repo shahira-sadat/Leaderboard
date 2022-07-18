@@ -116,7 +116,27 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n//# sourceURL=webpack://leaderborad/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_data_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/data.js */ \"./src/modules/data.js\");\n/* harmony import */ var _modules_score_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/score.js */ \"./src/modules/score.js\");\n\n\n // Generate scores\n\n(0,_modules_score_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(_modules_data_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]); // Add a score\n\nvar container = document.querySelector('.form');\nvar inputName = document.querySelector('#input-name');\nvar inputScore = document.querySelector('#input-score');\n\ncontainer.onsubmit = function (e) {\n  e.preventDefault();\n  var name = inputName.value;\n  var score = inputScore.value;\n  _modules_data_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].push({\n    name: name,\n    score: score\n  });\n  (0,_modules_score_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(_modules_data_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n};\n\n//# sourceURL=webpack://leaderborad/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/data.js":
+/*!*****************************!*\
+  !*** ./src/modules/data.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar data = [{\n  name: 'Name',\n  score: 100\n}, {\n  name: 'Name',\n  score: 20\n}, {\n  name: 'Name',\n  score: 50\n}, {\n  name: 'Name',\n  score: 78\n}, {\n  name: 'Name',\n  score: 125\n}, {\n  name: 'Name',\n  score: 77\n}, {\n  name: 'Name',\n  score: 42\n}];\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (data);\n\n//# sourceURL=webpack://leaderborad/./src/modules/data.js?");
+
+/***/ }),
+
+/***/ "./src/modules/score.js":
+/*!******************************!*\
+  !*** ./src/modules/score.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar container = document.querySelector('.scores');\n\nvar generateScores = function generateScores(data) {\n  container.innerHTML = '';\n  data.forEach(function (item) {\n    container.innerHTML += \"<li>\".concat(item.name, \": \").concat(item.score, \"</li>\");\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateScores);\n\n//# sourceURL=webpack://leaderborad/./src/modules/score.js?");
 
 /***/ })
 
