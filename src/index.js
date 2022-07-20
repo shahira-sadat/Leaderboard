@@ -21,8 +21,3 @@ container.onsubmit = (e) => {
   inputScore.value = '';
   
 };
-
-const refresh = document.querySelector('.refresh');
-      refresh.addEventListener('click', () => {
-        document.location.reload();
-    });
