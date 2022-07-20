@@ -17,4 +17,12 @@ container.onsubmit = (e) => {
   const score = inputScore.value;
   data.push({ name, score });
   generateScores(data);
+  inputName.value='';
+  inputScore.value = '';
+  
 };
+
+const refresh = document.querySelector('.refresh');
+      refresh.addEventListener('click', () => {
+        document.location.reload();
+    });
