@@ -1,4 +1,3 @@
-
 // My game: Afg Survivers
 // My game id: Z7iKCEhy4GHS8SXWJPqr
 

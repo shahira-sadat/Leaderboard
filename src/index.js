@@ -27,4 +27,3 @@ const refreshButton = document.querySelector('#refresh-btn');
 refreshButton.onclick = () => {
   fetchData();
 };
-  
