@@ -18,6 +18,12 @@ h1 {
   padding: 1em 0;
 }
 
+.gamename {
+  margin-bottom: 1rem;
+  margin-top: -2rem;
+  font-family: monospace;
+}
+
 ul {
   list-style: none;
 }
