@@ -1,5 +1,7 @@
 # Leaderboard
-<img width="706" alt="Screen Shot 2022-07-21 at 4 31 44 AM" src="https://user-images.githubusercontent.com/53530780/180102406-bf203709-2e84-478e-aeac-61df716a0ca8.png">
+
+<img width="1434" alt="Screen Shot 2022-07-21 at 7 25 58 PM" src="https://user-images.githubusercontent.com/53530780/180247072-67a671e3-efee-4955-bc91-3c0df32765e9.png">
+
 
 
 > A single page web app that displays scores submitted by different players. <br>

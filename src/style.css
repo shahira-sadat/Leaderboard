@@ -14,14 +14,29 @@ html {
   box-sizing: border-box;
 }
 
-h1 {
-  padding: 1em 0;
+body {
+  background: #020109;
+  overflow: hidden;
+  margin-top: 60px;
 }
 
-.gamename {
-  margin-bottom: 1rem;
-  margin-top: -2rem;
-  font-family: monospace;
+.main-container {
+  margin: auto;
+  margin-top: 30px;
+  width: 800px;
+  padding: 40px;
+  background-color: #03e9f4;
+  color: #050801;
+  box-shadow:
+    0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+}
+
+h1 {
+  padding: 1em 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -51,15 +66,29 @@ header {
 }
 
 button {
-  background: #fff;
+  background: #000;
   padding: 5px;
-  border: 1px solid black;
   border-bottom: 3px solid black;
   border-left: 3px solid black;
+  font-size: 12px;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #0f0e0f;
+  border: #0f0e0f 3px solid;
+  background-color: transparent;
+  border-radius: 0.25em;
+  box-shadow: inset 0 0 0.5em 0  #0f0e0f, 0 0 0.5em 0 #0f0e0f;
+  transition: all 0.5s;
 }
 
-p {
-  color: red;
+button:hover {
+  background-color: #0f0e0f;
+  color: #fff;
 }
 
 .recent {
@@ -68,15 +97,22 @@ p {
 }
 
 .scores {
-  border: 2px solid black;
+  border: 1px solid black;
+  background: rgb(15 49 56);
+  height: 380px;
+  overflow-y: scroll;
 }
 
 .scores li {
-  padding: 0.3em;
+  padding: 0.6em;
 }
 
 .scores li:nth-child(even) {
-  background-color: lightgray;
+  background: linear-gradient(to bottom, transparent, #03e9f4);
+}
+
+.scores li:nth-child(odd) {
+  background: linear-gradient(to left, transparent, #03e9f4);
 }
 
 .table-title {
@@ -90,7 +126,20 @@ p {
 }
 
 .form input {
-  padding: 0.3em;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  color: #000;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #0ff,
+    0 0 30px #0ff,
+    0 0 40px rgb(7 10 10);
 }
 
 .form button {
