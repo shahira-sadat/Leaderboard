@@ -1,6 +1,7 @@
+:root {
+  --max-width: 600px;
+}
 
-
-/* Global */
 *,
 *::before,
 *::after {
@@ -13,85 +14,45 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  color: white;
-  background-color: rgb(15, 15, 14);
+body{
+    background: #020109;
+    overflow: hidden;
+    margin-top: 60px;
 }
 
-
-input {
-  font-family: Arial, sans-serif;
-  padding: 0.5em 0.8em;
-  border: 3px solid #370617;
-}
-
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color:  #faa307;
-  border: none;
-  border-radius: 5px;
-  padding: 0 4px;
-  margin: 0;
-  color: white;
-  cursor: pointer;
-  transition: background-color 200ms ease;
-}
-
-button:hover {
-  background-color: #bbffee;
-}
-
-button:active {
-  background-color: #bbffee;
-}
-
-h1 {
-  padding-bottom: 25px;
-  text-align: center;
-  font-size: 26px;
-}
-
-ul {
-  list-style: none;
-}
-
-.icon {
-  font-family: 'Material Icons', Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-/* Main */
-.main-container {
-  margin: auto;
-  margin-top: 50px;
-  background-color: rgb(58, 55, 55);
-  width: 600px;
-  padding: 10px;
-}
-
-.main-container:hover{
-background-color: #03e9f4;
+.main-container{
+    margin: auto;
+  margin-top: 30px;
+  width:  800px;
+  padding: 40px;
+  background-color: #03e9f4;
   color: #050801;
   box-shadow: 0 0 5px #03e9f4,
               0 0 25px #03e9f4,
               0 0 50px #03e9f4,
               0 0 200px #03e9f4;
-
 }
+
+h1 {
+  padding: 1em 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+  list-style: none;
+}
+
 header {
   margin: auto;
+  max-width: var(--max-width);
 }
 
 .main {
   margin: auto;
   display: flex;
   justify-content: space-around;
-  gap: 10px;
+  max-width: var(--max-width);
 }
 
 .container {
@@ -99,10 +60,38 @@ header {
   flex-direction: column;
 }
 
-.recent-scores-container-wrapper {
+.recent-scores-container {
   width: 100%;
   max-width: 300px;
 }
+
+button {
+  background: #000;
+  padding: 5px;
+  border: 1px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+
+  font-size:12px;
+      height:30px;
+      width:80px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      cursor: pointer;
+      text-decoration: none;
+      color:  #0f0e0f;
+      border: #0f0e0f 3px solid;
+      background-color:transparent;
+      border-radius: 0.25em;
+      box-shadow: inset 0 0 0.5em 0  #0f0e0f, 0 0 0.5em 0 #0f0e0f;
+      transition:all 0.5s;
+}
+
+button:hover{
+        background-color:#0f0e0f;
+        color:#fff;
+    }
 
 .recent {
   display: flex;
@@ -110,54 +99,22 @@ header {
 }
 
 .scores {
-  border: 3px solid #370617;
-
-  }
-
-.scores li{
-display: flex;
-    padding: 0.5em 0.8em;
+  border: 1px solid black;
+  background: rgb(15, 49, 56);
+  height: 380px;
+  overflow-y: scroll;
 }
 
-.scores li:first-child{
- min-width: 25px;
+.scores li {
+  padding: 0.6em;
 }
 
-.scores li:nth-child(2){
- flex: 1;
+.scores li:nth-child(even) {
+ background: linear-gradient(to bottom,transparent,#03e9f4);
 }
-
-.scores li:nth-child(even){
- background-color: #d00000;
+.scores li:nth-child(odd) {
+ background: linear-gradient(to left,transparent,#03e9f4);
 }
-
-
-
-.nav-container {
-  margin: auto;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
-
-}
-.nav-container a {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transition: color 200ms ease;
-  }
-
-.nav-container a:hover{
-    color: #bbffee;
-  }
-.nav-container a:active{
-    color: #bbffee;
-  }
-.nav-container span{
-   font-size: 30px;
-  }
-
 
 .table-title {
   padding-bottom: 20px;
@@ -169,21 +126,20 @@ display: flex;
   gap: 15px;
 }
 
-.form button {
-    align-self: flex-end;
-  }
-
-.button {
-  padding: 7px 15px;
-  font-size: 14px;
+.form input {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  color: #000;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff,
+    0 0 40px rgb(7, 10, 10);
 }
 
-@media screen and (min-width: 768px) {
-  .main-container {
-    padding: 30px;
-  }
+.form button {
+  align-self: flex-end;
 
-  .nav-container {
-    width: 60%;
-  }
 }
